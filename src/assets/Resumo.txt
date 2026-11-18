@@ -1,0 +1,65 @@
+1. Estilos Globais (src/assets/)
+base.css
+Arquivo dedicado ao reset e formatação base das tags HTML padrão.
+
+*, *::before, *::after: Remove margens/preenchimentos padrão e aplica box-sizing: border-box.
+
+body: Define a fonte padrão, tamanho de texto base em rem e remove rolagem horizontal (overflow-x: hidden).
+
+main.css
+Define os Design Tokens no seletor :root e as classes de estrutura de página utilizadas nas views.
+
+Variáveis no :root:
+
+--bg-primary, --bg-secondary, --bg-tertiary: Cores de fundo (páginas, painéis e laboratórios).
+
+--text-primary, --text-secondary: Cores das fontes para contraste e hierarquia.
+
+--primary-color, --nav-bg, --code-bg: Cores de destaque, menu de navegação e fundo de blocos de código.
+
+--spacing-sm, --spacing-md, --spacing-lg: Escala de espaçamentos em rem.
+
+Classes de Layout Global:
+
+.section-container: Centraliza e delimita a largura máxima do conteúdo de cada seção (ex: max-width: 800px, margin: 0 auto, padding: 1rem).
+
+.lab-container: Padroniza as bordas, fundo e espaçamento dos blocos de laboratórios interativos.
+
+2. Estilos de Componentes (Scoped CSS)
+Estas classes existem dentro do bloco <style scoped> de cada componente Vue e não afetam o restante da aplicação.
+
+Layout (TheNavbar.vue)
+
+.navbar: Contêiner principal do cabeçalho, usa Flexbox para alinhar a marca e os controles.
+
+.brand: Formatação tipográfica do nome/logo do projeto.
+
+.mobile-menu-btn: Botão de hambúrguer visível apenas no celular (ocultado no desktop via min-width: 768px).
+
+nav: Contêiner dos links. Oculto por padrão no celular (display: none).
+
+nav.is-open: Classe alternada dinamicamente via Vue para exibir o menu expandido no celular.
+
+.challenge-link: Destaque visual específico para a aba do Desafio Final.
+
+Compartilhados (SectionAnswer.vue & CodeSnippet.vue)
+
+.section-answer: Define o bloco cinza/fundo secundário que envolve a pergunta-guia e a resposta.
+
+.question-box: Margem inferior e fonte em negrito para destacar a pergunta.
+
+.answer-box: Formatação do texto de resposta.
+
+.code-snippet: Fundo escuro/específico para código e overflow-x: auto para permitir rolagem apenas no código se a linha for muito longa, evitando vazamento na tela.
+
+Laboratórios (UnitConverter.vue, ResizeSlider.vue & WindowTracker.vue)
+
+.converter-controls: Organiza os inputs e selects do conversor de unidades usando Flexbox.
+
+.result: Destaca a tipografia do valor convertido em pixels.
+
+.grid-container: Contêiner do laboratório de responsividade aplicando CSS Grid (grid-template-columns: repeat(auto-fit, minmax(...))) e largura dinâmica controlada pelo input range.
+
+.grid-item: O card individual dentro do laboratório de Grid, com cor de destaque e espaçamento interno.
+
+.window-tracker: Fixa o indicador de breakpoints no canto inferior direito da tela (position: fixed, z-index: 1000).
