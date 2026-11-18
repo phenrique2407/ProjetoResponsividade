@@ -1,37 +1,29 @@
-# projeto-responsividade
+# Projeto Responsividade
 
-This template should help get you started developing with Vue 3 in Vite.
+Projeto Vue 3 desenvolvido com Vite para estudos de responsividade.
 
-## Recommended IDE Setup
+## Configuração recomendada do IDE
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (desative o Vetur).
 
-## Recommended Browser Setup
+## Configuração do navegador
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- Chromium: Chrome, Edge ou Brave.
+- Firefox.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Instalação
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Executar em desenvolvimento
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Gerar versão de produção
 
 ```sh
 npm run build
