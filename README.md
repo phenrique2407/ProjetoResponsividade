@@ -4,8 +4,8 @@ Guia interativo em Vue 3 que ensina a criar páginas que funcionam em qualquer t
 Cada seção tem explicação curta, código comentado, laboratório interativo, resposta da
 pergunta-guia e fontes consultadas. Termina com a página Desafio.
 
-- Site publicado: ADICIONAR_LINK
-- Dupla: ADICIONAR_NOMES
+- Site publicado: https://phenrique2407.github.io/ProjetoResponsividade/
+- Dupla: Pedro Henrique Dias Brito e Vinicius Rodrigues Vilaça
 
 ## Tecnologias
 
@@ -52,13 +52,6 @@ npm install
 npm run dev
 npm run build
 ```
-
-## Publicação
-
-- **Vercel:** importe o repositório; o `vercel.json` já trata as rotas do SPA.
-- **Netlify:** o arquivo `public/_redirects` já trata as rotas.
-- **GitHub Pages:** `VITE_BASE=/nome-do-repositorio/ npm run build` e publique a pasta `dist`
-  (copie `dist/index.html` para `dist/404.html` para as rotas funcionarem).
 
 ## Regras técnicas atendidas
 
